@@ -14,7 +14,7 @@ Os princípios S.O.L.I.D. são diretrizes que ajudam desenvolvedores a criar sis
 
 Esses princípios tornam o software modular e escalável, facilitando sua evolução com o mínimo de impacto em funcionalidades existentes.
 
-### Melhorias de Design no Código para Alinhamento ao S.O.L.I.D.
+# Melhorias de Design no Código para Alinhamento ao S.O.L.I.D.
 
 **Separação de responsabilidades na classe Funcionario**  
 No código inicial, a classe `Funcionario` lidava com múltiplas responsabilidades: armazenar dados do funcionário, calcular o salário e também imprimir os detalhes. Isso violava o Princípio da Responsabilidade Única, pois uma classe deve ter apenas uma razão para mudar. Ao separar essas responsabilidades em diferentes classes (`Funcionario`, `CalculadoraSalario`, e `ImpressorDetalhes`), temos um código mais organizado e claro. Agora, cada classe possui uma função específica: `Funcionario` armazena os dados do funcionário, `CalculadoraSalario` cuida das regras de cálculo do salário, e `ImpressorDetalhes` exibe as informações. Dessa forma, o código permite que alterações em uma responsabilidade (como o cálculo do salário) não afetem outras funções, como a exibição dos detalhes. Isso torna o código mais estável e com menos chances de falhas em caso de modificações.
